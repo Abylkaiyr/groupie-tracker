@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ui/styles/index.css">
+ 
+  
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="first">
+            <div class="Abeke">
+                Abylkaiyr
+            </div>
+            <div class="Dake">
+                Dias12
+            </div>
+        </div>
+        <div class="second">
+            <div class="img">
+                <img src="/ui/utilities/download.png" alt="alem-logo" class="alem-logo">
+            </div>
+
+            <div class="groupie">
+                <div class="name">
+                    Groupie Tracker
+                </div>
+                
+            </div>            
+
+        </div>
+        <div class="third">
+            Alem 01, 
+            AStana Hub, 
+            Astana KZ..
+        </div>
+    </div>
+
+ <div class="main-page">
+    {{range .}}
+    <form action="detail" class="form">        
+        <div class="artist">
+            <div class="artist-img">
+                <img src="{{.Image}}" alt="artist-image" class="artist-image">
+            </div>
+            <div class="artist-name">
+                {{.Name}}
+            </div> 
+            <div class="button">
+                <button class="button1" type="submit" name="id" value="{{.ID}}">View Artist</button>               
+            </div>              
+        </div> 
+    </form>   
+     {{end}}  
+ </div>      
+</body>
+</html>
